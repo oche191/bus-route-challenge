@@ -48,6 +48,5 @@ public class DirectRouteController {
             logger.error(e.getMessage());
             return CompletableFuture.completedFuture(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build());
         }
-
     }
 }

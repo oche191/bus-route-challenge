@@ -59,7 +59,7 @@ public class BusRouteRepository {
      */
     @Scheduled(cron = "0 0 6 * * MON", zone = "CET")
     void reloadBusRoutes() throws IOException {
-        logger.info("Reloading data file ...");
+        logger.info("Loading data file ...");
 
         final List<List<Integer>> idPlusRouteInfo = Files.lines(data.toPath())
                 .skip(1)
